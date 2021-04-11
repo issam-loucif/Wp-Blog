@@ -23,16 +23,8 @@ get_header();
        
     </style>
     <div>
-    <?php
-      if( have_posts() ){
-        while( have_posts() ){
-          the_post();
-          the_content();
-        }
-      }
-    
-    ?>
-    <img src="/wp-content/themes/Blog theme/assets/img/pexels-dominika-roseclay-1036841.jpg" width="100%" height="670">
+
+    <img src="/wp-content/themes/Blogger/assets/img/pexels-dominika-roseclay-1036841.jpg" width="100%" height="670">
     </div>
       
     <?php

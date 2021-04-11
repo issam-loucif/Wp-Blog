@@ -2,6 +2,7 @@
 get_header();
 ?>
 
+
     <div>
     <?php
       if( have_posts() ){
@@ -12,6 +13,7 @@ get_header();
       }
     
     ?>
+    <img src="/wp-content/themes/Blogger/assets/img/pexels-dominika-roseclay-1036841.jpg" width="100%" height="670">
     </div>
       
     <?php
