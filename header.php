@@ -15,7 +15,7 @@
     <!--nav barre-->
     <nav class="navbar navbar-expand-lg navbar-dark" style=background-color:#0097a7;>
         <div class="container-fluid">
-            <a class="navbar-brand" href="/Accueil.html">
+            <a class="navbar-brand" href="/">
             <?php
             if(function_exists('the_costom_logo')){
 
@@ -44,21 +44,23 @@
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Accueil.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
+                        <a class="nav-link" href="/about-page">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Blog.html">Blog</a>
+                        <a class="nav-link" href="/blog/">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
+                        <a class="nav-link" href="/contact-us">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
+                <?php
+                get_search_form();
+                ?>
+                    
                 </form>
             </div>
         </div>
